@@ -1,7 +1,8 @@
 # andy-repo
 
-Arch Linux package repository for Lynxer. Package archives are versioned and
-older builds are retained in this directory.
+Arch Linux package repository for Lynxer and Desktools. The pacman databases
+and package archives live in `packages/`; GitHub Pages publishes that directory
+at the repository URL.
 
 The repository publishes a separate pacman database for each architecture.
 Add the matching section to `/etc/pacman.conf`:
@@ -20,5 +21,6 @@ SigLevel = Optional
 Server = https://andy64lol.github.io/andy-repo/
 ```
 
-The current package version is `0.1.8.3-2` on both architectures. Refresh the
-package databases after adding the repository with `sudo pacman -Syu`.
+The current versions on both architectures are Lynxer `0.1.8.3-2` and
+Desktools `0.1.0-1`. Refresh the package databases after adding the repository
+with `sudo pacman -Syu`.
