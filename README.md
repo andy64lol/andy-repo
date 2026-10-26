@@ -21,6 +21,6 @@ SigLevel = Optional
 Server = https://andy64lol.github.io/andy-repo/
 ```
 
-The current versions on both architectures are Lynxer `0.1.8.3-2` and
+The current versions on both architectures are Lynxer `0.1.8.4-1` and
 Desktools `0.1.0-1`. Refresh the package databases after adding the repository
 with `sudo pacman -Syu`.
