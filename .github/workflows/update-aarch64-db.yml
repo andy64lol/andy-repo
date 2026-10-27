@@ -1,0 +1,36 @@
+name: Update aarch64 package database
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'packages/*-aarch64.pkg.tar.*'
+      - 'packages/*-any.pkg.tar.*'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: package-db-aarch64
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    container: archlinux:latest
+    steps:
+      - name: Install Git and curl
+        run: pacman -Syu --noconfirm git curl
+
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Rebuild and publish aarch64 database
+        run: bash .github/scripts/update-package-db.sh aarch64
+        env:
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          GITHUB_TOKEN: ${{ github.token }}
