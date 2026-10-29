@@ -1,6 +1,10 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+repo_root=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/../.." && pwd)
+cd "$repo_root"
+git config --global --add safe.directory "$repo_root"
+
 package_arch=${1:?usage: update-package-db.sh <x86_64|aarch64>}
 case "$package_arch" in
   x86_64)
