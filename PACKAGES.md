@@ -7,7 +7,7 @@ This repository currently offers the following packages for both `x86_64`
 | --- | --- | --- | --- | --- |
 | `desktools` | `0.1.0-1` | Create and edit `.desktop` launchers | `gcc-libs` | — |
 | `elfinstaller` | `0.1.0-1` | A simple terminal application to install and manage ELF packages | — | https://github.com/andy64lol/elfinstaller |
-| `lynxer` | `0.1.9b1h-1` | A small, statically-flavoured C-style programming language with a standalone native runtime | `libffi`, `alsa-lib`, `bzip2` | https://github.com/andy64lol/Lynxer |
+| `lynxer` | `0.1.9b1-2` | A small, statically-flavoured C-style programming language with a standalone native runtime | `libffi`, `alsa-lib`, `bzip2` | https://github.com/andy64lol/Lynxer |
 | `tandem` | `0.1.1-1` | A language, compiler, package workflow, and embedded runtime for Lua programs | `gcc-libs`, `openssl`, `zlib` | https://github.com/andy64lol/Tandem |
 
 ## Package archives
@@ -16,14 +16,14 @@ This repository currently offers the following packages for both `x86_64`
 
 - `desktools-0.1.0-1-x86_64.pkg.tar.zst`
 - `elfinstaller-0.1.0-1-x86_64.pkg.tar.zst`
-- `lynxer-0.1.9b1h-1-x86_64.pkg.tar.zst`
+- `lynxer-0.1.9b1-2-x86_64.pkg.tar.zst`
 - `tandem-0.1.1-1-x86_64.pkg.tar.zst`
 
 ### aarch64
 
 - `desktools-0.1.0-1-aarch64.pkg.tar.xz`
 - `elfinstaller-0.1.0-1-aarch64.pkg.tar.xz`
-- `lynxer-0.1.9b1h-1-aarch64.pkg.tar.xz`
+- `lynxer-0.1.9b1-2-aarch64.pkg.tar.xz`
 - `tandem-0.1.1-1-aarch64.pkg.tar.xz`
 
 ## Install

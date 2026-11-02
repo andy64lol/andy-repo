@@ -41,19 +41,7 @@ for package_file in "${package_files[@]}"; do
   fi
 
   current_version=${latest_versions[$package_name]-}
-  version_is_newer=0
-  if [[ -z "$current_version" ]]; then
-    version_is_newer=1
-  else
-    cmp=$(vercmp "$package_version" "$current_version")
-    if (( cmp > 0 || cmp == 0 )); then
-      version_is_newer=1
-    elif (( cmp < 0 )) && [[ "${package_version%-*}" == "${current_version%-*}"* ]] && [[ "${package_version%-*}" != "${current_version%-*}" ]]; then
-      # Allow letter-suffix hotfixes such as 0.1.9b1h to supersede 0.1.9b1.
-      version_is_newer=1
-    fi
-  fi
-  if (( version_is_newer == 1 )); then
+  if [[ -z "$current_version" ]] || (( $(vercmp "$package_version" "$current_version") >= 0 )); then
     latest_versions[$package_name]=$package_version
     latest_packages[$package_name]=$package_file
   fi
