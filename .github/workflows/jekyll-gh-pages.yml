@@ -1,5 +1,7 @@
-# Sample workflow for building and deploying a Jekyll site to GitHub Pages
-name: Deploy Jekyll with GitHub Pages dependencies preinstalled
+# Publishes the packages/ directory as-is to GitHub Pages.
+# Kept under its original file name because .github/scripts/update-package-db.sh
+# dispatches it by name after rebuilding a package database.
+name: Deploy package repository to GitHub Pages
 
 on:
   # Runs on pushes targeting the default branch
@@ -30,13 +32,13 @@ jobs:
         uses: actions/checkout@v4
       - name: Setup Pages
         uses: actions/configure-pages@v5
-      - name: Build with Jekyll
-        uses: actions/jekyll-build-pages@v1
-        with:
-          source: ./packages
-          destination: ./_site
       - name: Upload artifact
+        # The package archives and pacman databases under packages/ are a static
+        # site already: publish that directory as-is instead of running Jekyll
+        # over hundreds of megabytes of binaries.
         uses: actions/upload-pages-artifact@v3
+        with:
+          path: packages
 
   # Deployment job
   deploy:
