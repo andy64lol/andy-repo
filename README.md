@@ -23,6 +23,6 @@ Server = https://andy64lol.github.io/andy-repo/
 
 The current versions on both architectures are Lynxer `0.1.9b2-5`,
 Desktools `0.1.0-1`, Elfinstaller `0.1.0-1`, and Tandem `0.2.1-1`. Cyz
-`0.0.1-2` and its detached `cyz-debug` symbols are available for `x86_64` only.
+`0.0.2-1` and its detached `cyz-debug` symbols are available for `x86_64` only.
 Refresh the package databases after adding the repository with `sudo pacman
 -Syu`. See [PACKAGES.md](PACKAGES.md) for the full package list.

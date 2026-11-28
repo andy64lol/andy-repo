@@ -6,8 +6,8 @@ both `x86_64` (`[andy]`) and `aarch64` (`[andy-aarch64]`) except `cyz` and
 
 | Package | Version | Description | Runtime dependencies | Upstream |
 | --- | --- | --- | --- | --- |
-| `cyz` (x86_64 only) | `0.0.1-2` | Cyz compiler (`.cyz` to C via `cc`) | `gcc`, `zlib`, `openssl`, `sqlite`, `ncurses` | https://github.com/andy64lol/Cyz |
-| `cyz-debug` (x86_64 only) | `0.0.1-2` | Detached debugging symbols for `cyz` | — | https://github.com/andy64lol/Cyz |
+| `cyz` (x86_64 only) | `0.0.2-1` | Cyz compiler (`.cyz` to C via `cc`) | `gcc`, `zlib`, `openssl`, `sqlite`, `ncurses` | https://github.com/andy64lol/Cyz |
+| `cyz-debug` (x86_64 only) | `0.0.2-1` | Detached debugging symbols for `cyz` | — | https://github.com/andy64lol/Cyz |
 | `desktools` | `0.1.0-1` | Create and edit `.desktop` launchers | `gcc-libs` | — |
 | `elfinstaller` | `0.1.0-1` | A simple terminal application to install and manage ELF packages | — | https://github.com/andy64lol/elfinstaller |
 | `lynxer` | `0.1.9b2-5` | A small, statically-flavoured C-style programming language with a standalone native runtime | `libffi`, `alsa-lib`, `bzip2` | https://github.com/andy64lol/Lynxer |
@@ -17,8 +17,8 @@ both `x86_64` (`[andy]`) and `aarch64` (`[andy-aarch64]`) except `cyz` and
 
 ### x86_64
 
-- `cyz-0.0.1-2-x86_64.pkg.tar.zst`
-- `cyz-debug-0.0.1-2-x86_64.pkg.tar.zst`
+- `cyz-0.0.2-1-x86_64.pkg.tar.zst`
+- `cyz-debug-0.0.2-1-x86_64.pkg.tar.zst`
 - `desktools-0.1.0-1-x86_64.pkg.tar.zst`
 - `elfinstaller-0.1.0-1-x86_64.pkg.tar.zst`
 - `lynxer-0.1.9b2-5-x86_64.pkg.tar.zst`
